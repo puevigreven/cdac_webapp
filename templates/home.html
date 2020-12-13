@@ -1,0 +1,72 @@
+<<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <meta charset="utf-8">
+    <title>Authorship Attribution</title>
+    <style type="text/css">
+
+      .active-pink-textarea.md-form label.active {
+  color: #f48fb1;
+}
+.pink-textarea textarea.md-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid #f48fb1;
+  box-shadow: 0 1px 0 0 #f48fb1;
+}
+.pink-textarea.md-form .prefix.active {
+  color: #f48fb1;
+}
+.active-pink-textarea.md-form textarea.md-textarea:focus:not([readonly])+label {
+  color: #f48fb1;
+}
+
+.active-amber-textarea.md-form label.active {
+  color: #ffa000;
+}
+.amber-textarea textarea.md-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid #ffa000;
+  box-shadow: 0 1px 0 0 #ffa000;
+}
+
+body {
+  background-image:url('https://i.pinimg.com/736x/0d/a5/69/0da569413fd97c8ef47b4da89a88b019.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+    </style>
+  </head>
+  <body>
+    <h1><div style="text-align:center;"><font color="blue">Predict the Author of the tweet</font></div></h1>
+    <hr>
+    <br>
+    <h2><div style="margin-left: 320px;margin-top: 120px;"><font color="black">Please Enter the text to predict the author</font></div></h2>
+    <br>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <form  method="POST" action="/predict">
+            <div class="form-group">
+          <div class="md-form mb-4 pink-textarea active-pink-textarea-2">
+           <i class="fas fa-angle-double-right prefix"></i>
+            <textarea style="margin-right:200px;margin-left: 100px ;height:200px;width: 800px;"id="form23" class="md-textarea form-control" rows="10" cols="12" name="text"></textarea>
+          <label for="form23"></label>
+           </div>
+              </div>
+                <input style="margin-right:200px;margin-left: 100px ;height:50px;width: 800px;"
+                class="btn btn-primary" type="submit" value="Submit">
+                  </form>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+  </body>
+</html>
